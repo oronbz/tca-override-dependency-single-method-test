@@ -9,20 +9,12 @@ import Foundation
 import Dependencies
 
 struct NumberGenerator {
-    var ten: () async throws -> Int
-    var one: () async throws -> Int
+    var ten: () async -> Int
 }
 
 extension NumberGenerator: DependencyKey {
     static var liveValue: NumberGenerator {
-        Self(
-            ten: {
-                10
-            },
-            one: {
-                1
-            }
-        )
+        Self(ten: { 10 })
     }
 }
 

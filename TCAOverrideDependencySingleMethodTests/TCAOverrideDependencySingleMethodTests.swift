@@ -20,7 +20,7 @@ class TCAOverrideDependencySingleMethodTests: XCTestCase {
         
         await store.send(.onAppear)
         
-        await store.receive(.numberResult(.success(5))) {
+        await store.receive(.numberResult(5)) {
             $0.number = 5
         }
     }

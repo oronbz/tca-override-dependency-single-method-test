@@ -18,7 +18,7 @@ struct Main: Reducer {
     
     enum Action: Equatable {
         case onAppear
-        case numberResult(TaskResult<Int>)
+        case numberResult(Int)
     }
     
     var body: some ReducerOf<Self> {
@@ -26,15 +26,10 @@ struct Main: Reducer {
             switch action {
             case .onAppear:
                 return .task {
-                    await .numberResult(TaskResult {
-                        try await ten()
-                    })
+                    .numberResult(await ten())
                 }
-            case .numberResult(.success(let number)):
+            case .numberResult(let number):
                 state.number = number
-                return .none
-            case .numberResult(.failure(let error)):
-                print(error.localizedDescription)
                 return .none
             }
         }

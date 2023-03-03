@@ -8,23 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		82D81B5D29B291CD0057E511 /* TCAOverrideDependencySingleMethodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D81B5C29B291CD0057E511 /* TCAOverrideDependencySingleMethodApp.swift */; };
-		82D81B5F29B291CD0057E511 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D81B5E29B291CD0057E511 /* ContentView.swift */; };
 		82D81B6129B291CF0057E511 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D81B6029B291CF0057E511 /* Assets.xcassets */; };
 		82D81B6429B291CF0057E511 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82D81B6329B291CF0057E511 /* Preview Assets.xcassets */; };
 		82D81B6E29B291CF0057E511 /* TCAOverrideDependencySingleMethodTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D81B6D29B291CF0057E511 /* TCAOverrideDependencySingleMethodTests.swift */; };
-		82D81B7829B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D81B7729B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.swift */; };
-		82D81B7A29B291CF0057E511 /* TCAOverrideDependencySingleMethodUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D81B7929B291CF0057E511 /* TCAOverrideDependencySingleMethodUITestsLaunchTests.swift */; };
+		82D81B8829B292010057E511 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = 82D81B8729B292010057E511 /* ComposableArchitecture */; };
+		82D81B8A29B2922F0057E511 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D81B8929B2922F0057E511 /* MainView.swift */; };
+		82D81B8C29B2923E0057E511 /* NumberGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82D81B8B29B2923E0057E511 /* NumberGenerator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		82D81B6A29B291CF0057E511 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 82D81B5129B291CD0057E511 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 82D81B5829B291CD0057E511;
-			remoteInfo = TCAOverrideDependencySingleMethod;
-		};
-		82D81B7429B291CF0057E511 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 82D81B5129B291CD0057E511 /* Project object */;
 			proxyType = 1;
@@ -36,14 +29,12 @@
 /* Begin PBXFileReference section */
 		82D81B5929B291CD0057E511 /* TCAOverrideDependencySingleMethod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TCAOverrideDependencySingleMethod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D81B5C29B291CD0057E511 /* TCAOverrideDependencySingleMethodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAOverrideDependencySingleMethodApp.swift; sourceTree = "<group>"; };
-		82D81B5E29B291CD0057E511 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		82D81B6029B291CF0057E511 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		82D81B6329B291CF0057E511 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		82D81B6929B291CF0057E511 /* TCAOverrideDependencySingleMethodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAOverrideDependencySingleMethodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		82D81B6D29B291CF0057E511 /* TCAOverrideDependencySingleMethodTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAOverrideDependencySingleMethodTests.swift; sourceTree = "<group>"; };
-		82D81B7329B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TCAOverrideDependencySingleMethodUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		82D81B7729B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAOverrideDependencySingleMethodUITests.swift; sourceTree = "<group>"; };
-		82D81B7929B291CF0057E511 /* TCAOverrideDependencySingleMethodUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCAOverrideDependencySingleMethodUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		82D81B8929B2922F0057E511 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		82D81B8B29B2923E0057E511 /* NumberGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberGenerator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,17 +42,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				82D81B8829B292010057E511 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		82D81B6629B291CF0057E511 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		82D81B7029B291CF0057E511 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,7 +61,6 @@
 			children = (
 				82D81B5B29B291CD0057E511 /* TCAOverrideDependencySingleMethod */,
 				82D81B6C29B291CF0057E511 /* TCAOverrideDependencySingleMethodTests */,
-				82D81B7629B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests */,
 				82D81B5A29B291CD0057E511 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,7 +70,6 @@
 			children = (
 				82D81B5929B291CD0057E511 /* TCAOverrideDependencySingleMethod.app */,
 				82D81B6929B291CF0057E511 /* TCAOverrideDependencySingleMethodTests.xctest */,
-				82D81B7329B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,9 +78,10 @@
 			isa = PBXGroup;
 			children = (
 				82D81B5C29B291CD0057E511 /* TCAOverrideDependencySingleMethodApp.swift */,
-				82D81B5E29B291CD0057E511 /* ContentView.swift */,
 				82D81B6029B291CF0057E511 /* Assets.xcassets */,
 				82D81B6229B291CF0057E511 /* Preview Content */,
+				82D81B8929B2922F0057E511 /* MainView.swift */,
+				82D81B8B29B2923E0057E511 /* NumberGenerator.swift */,
 			);
 			path = TCAOverrideDependencySingleMethod;
 			sourceTree = "<group>";
@@ -118,15 +102,6 @@
 			path = TCAOverrideDependencySingleMethodTests;
 			sourceTree = "<group>";
 		};
-		82D81B7629B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests */ = {
-			isa = PBXGroup;
-			children = (
-				82D81B7729B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.swift */,
-				82D81B7929B291CF0057E511 /* TCAOverrideDependencySingleMethodUITestsLaunchTests.swift */,
-			);
-			path = TCAOverrideDependencySingleMethodUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +118,9 @@
 			dependencies = (
 			);
 			name = TCAOverrideDependencySingleMethod;
+			packageProductDependencies = (
+				82D81B8729B292010057E511 /* ComposableArchitecture */,
+			);
 			productName = TCAOverrideDependencySingleMethod;
 			productReference = 82D81B5929B291CD0057E511 /* TCAOverrideDependencySingleMethod.app */;
 			productType = "com.apple.product-type.application";
@@ -165,24 +143,6 @@
 			productReference = 82D81B6929B291CF0057E511 /* TCAOverrideDependencySingleMethodTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		82D81B7229B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 82D81B8329B291CF0057E511 /* Build configuration list for PBXNativeTarget "TCAOverrideDependencySingleMethodUITests" */;
-			buildPhases = (
-				82D81B6F29B291CF0057E511 /* Sources */,
-				82D81B7029B291CF0057E511 /* Frameworks */,
-				82D81B7129B291CF0057E511 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				82D81B7529B291CF0057E511 /* PBXTargetDependency */,
-			);
-			name = TCAOverrideDependencySingleMethodUITests;
-			productName = TCAOverrideDependencySingleMethodUITests;
-			productReference = 82D81B7329B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -200,10 +160,6 @@
 						CreatedOnToolsVersion = 14.2;
 						TestTargetID = 82D81B5829B291CD0057E511;
 					};
-					82D81B7229B291CF0057E511 = {
-						CreatedOnToolsVersion = 14.2;
-						TestTargetID = 82D81B5829B291CD0057E511;
-					};
 				};
 			};
 			buildConfigurationList = 82D81B5429B291CD0057E511 /* Build configuration list for PBXProject "TCAOverrideDependencySingleMethod" */;
@@ -215,13 +171,15 @@
 				Base,
 			);
 			mainGroup = 82D81B5029B291CD0057E511;
+			packageReferences = (
+				82D81B8629B292010057E511 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = 82D81B5A29B291CD0057E511 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				82D81B5829B291CD0057E511 /* TCAOverrideDependencySingleMethod */,
 				82D81B6829B291CF0057E511 /* TCAOverrideDependencySingleMethodTests */,
-				82D81B7229B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -243,13 +201,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82D81B7129B291CF0057E511 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -257,7 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82D81B5F29B291CD0057E511 /* ContentView.swift in Sources */,
+				82D81B8C29B2923E0057E511 /* NumberGenerator.swift in Sources */,
+				82D81B8A29B2922F0057E511 /* MainView.swift in Sources */,
 				82D81B5D29B291CD0057E511 /* TCAOverrideDependencySingleMethodApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,15 +222,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82D81B6F29B291CF0057E511 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				82D81B7829B291CF0057E511 /* TCAOverrideDependencySingleMethodUITests.swift in Sources */,
-				82D81B7A29B291CF0057E511 /* TCAOverrideDependencySingleMethodUITestsLaunchTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -286,11 +229,6 @@
 			isa = PBXTargetDependency;
 			target = 82D81B5829B291CD0057E511 /* TCAOverrideDependencySingleMethod */;
 			targetProxy = 82D81B6A29B291CF0057E511 /* PBXContainerItemProxy */;
-		};
-		82D81B7529B291CF0057E511 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 82D81B5829B291CD0057E511 /* TCAOverrideDependencySingleMethod */;
-			targetProxy = 82D81B7429B291CF0057E511 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -507,42 +445,6 @@
 			};
 			name = Release;
 		};
-		82D81B8429B291CF0057E511 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WZ8GG366SX;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bz.oron.TCAOverrideDependencySingleMethodUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TCAOverrideDependencySingleMethod;
-			};
-			name = Debug;
-		};
-		82D81B8529B291CF0057E511 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = WZ8GG366SX;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = bz.oron.TCAOverrideDependencySingleMethodUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = TCAOverrideDependencySingleMethod;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -573,16 +475,26 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		82D81B8329B291CF0057E511 /* Build configuration list for PBXNativeTarget "TCAOverrideDependencySingleMethodUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				82D81B8429B291CF0057E511 /* Debug */,
-				82D81B8529B291CF0057E511 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		82D81B8629B292010057E511 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				branch = prerelease/1.0;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		82D81B8729B292010057E511 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 82D81B8629B292010057E511 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 82D81B5129B291CD0057E511 /* Project object */;
 }

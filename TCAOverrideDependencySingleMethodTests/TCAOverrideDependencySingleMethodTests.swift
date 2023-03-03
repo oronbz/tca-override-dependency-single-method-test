@@ -11,7 +11,7 @@ import ComposableArchitecture
 
 @MainActor
 class TCAOverrideDependencySingleMethodTests: XCTestCase {
-    func testOnAppear() async {
+    func testFailureOnAppear() async {
         let store = TestStore(initialState: Main.State(), reducer: Main()) {
             $0.numberGenerator.ten = {
                 5
@@ -24,4 +24,19 @@ class TCAOverrideDependencySingleMethodTests: XCTestCase {
             $0.number = 5
         }
     }
+    
+    func testSuccessOnAppear() async {
+        let store = TestStore(initialState: Main.State(), reducer: Main()) {
+            $0.numberGenerator = .init {
+                5
+            }
+        }
+        
+        await store.send(.onAppear)
+        
+        await store.receive(.numberResult(5)) {
+            $0.number = 5
+        }
+    }
+
 }

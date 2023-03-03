@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import XCTestDynamicOverlay
+
 
 @main
 struct TCAOverrideDependencySingleMethodApp: App {
     var body: some Scene {
         WindowGroup {
-            MainView(store: .init(initialState: .init(), reducer: Main()))
+            if !_XCTIsTesting {
+                MainView(store: .init(initialState: .init(), reducer: Main()))
+            }
         }
     }
 }
